@@ -1,0 +1,16 @@
+html,body{
+	height:100%;
+	background-color: #000;
+	.index{
+		text-align: center;
+		padding-top: 100px;
+		img{
+			height:200px;
+		}
+		.notice{
+			color:orange;
+			font-size: 30px;
+			line-height: 80px;
+		}
+	}
+}
