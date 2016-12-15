@@ -5,8 +5,6 @@ import React from 'react'
 import ReactIScroll from 'react-iscroll'
 import iScroll from 'iscroll'
 
-import {Link} from 'react-router'
-
 // import自定义组件
 import Search from './Search'
 import ListItem from './ListItem'
@@ -61,15 +59,15 @@ class Index extends React.Component {
 
     data.forEach((obj, index) => {
       listItems.push(
-        <Link to="/a">
-          <ListItem
-            key={index}
-            num_follow={obj['num_follow']}
-            ques_name={obj['ques_name']}
-            num_up={obj['num_up']}
-            best_answer={obj['best_answer']}
-          />
-        </Link>
+        <ListItem
+          key={index}
+          num_follow={obj['num_follow']}
+          ques_name={obj['ques_name']}
+          num_up={obj['num_up']}
+          best_answer={obj['best_answer']}
+          qid={obj['qid']}
+          bid={obj['bid']}
+        />
       )
     })
 
@@ -98,7 +96,8 @@ class Index extends React.Component {
 Index.defaultProps = {
   options: {
     scrollbars: true,
-    fadeScrollbars: true
+    fadeScrollbars: true,
+    preventDefault: false // 不屏蔽事件
   }
 }
 

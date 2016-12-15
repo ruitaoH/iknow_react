@@ -1,20 +1,25 @@
 require('style/index/listItem.scss')
 
 import React from 'react'
+import { Link } from 'react-router'
 
 class ListItem extends React.Component {
   render () {
     return (
         <div className="listItem">
-          <p className="question_num">{this.props.num_follow}人关注了问题</p>
-          <p className="question_title">{this.props.ques_name}</p>
+          <Link to={`/aaa/${this.props.qid}`}>
+            <p className="question_num">{this.props.num_follow}人关注了问题</p>
+            <p className="question_title">{this.props.ques_name}</p>
+          </Link>
 
           {
             this.props.best_answer
-              ? <div className="preview">
-                  <span className="num">{this.props.num_up}</span>
-                  <p className="question_content">{this.props.best_answer}</p>
-                </div>
+              ? <Link to={`/bbb/${this.props.qid}/${this.props.bid}`}>
+                  <div className="preview">
+                    <span className="num">{this.props.num_up}</span>
+                    <p className="question_content">{this.props.best_answer}</p>
+                  </div>
+                </Link>
               : null
           }
         </div>

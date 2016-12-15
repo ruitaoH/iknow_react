@@ -4,76 +4,74 @@
   width: 100%;
   height: 100%;
 
-  @at-root{
-    .register_main{
-      width: 100%;
-      height: 100%;
+  .register_main{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top:0.82rem;
+    background-color: #f6f1ea;
+
+    .main_content{
+      width: 4.74rem;
+      height: 9.1rem;
+      margin: 0.18rem auto 0;
       box-sizing: border-box;
-      padding-top:0.82rem;
-      background-color: #f6f1ea;
+      padding:0 0.02rem;
 
-      .main_content{
-        width: 4.74rem;
-        height: 9.1rem;
-        margin: 0.18rem auto 0;
-        box-sizing: border-box;
-        padding:0 0.02rem;
+      .avatar{
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background-color: #ded7ce;
+        margin:0.02rem auto 0.44rem;
+      }
 
-        .avatar{
-          width: 3.5rem;
-          height: 3.5rem;
-          border-radius: 50%;
-          background-color: #ded7ce;
-          margin:0.02rem auto 0.44rem;
-        }
+      .checkcode{
+        width: 100%;
+        height: 0.48rem;
+        margin-bottom: 0.18rem;
 
-        .checkcode{
-          width: 100%;
-          height: 0.48rem;
-          margin-bottom: 0.18rem;
+        .left_input{
+          width: 2.36rem;
+          height: 100%;
+          background-color: #FFF;
+          float: left;
 
-          .left_input{
-            width: 2.36rem;
+          input{
+            width: 100%;
             height: 100%;
-            background-color: #FFF;
-            float: left;
-
-            input{
-              width: 100%;
-              height: 100%;
-              outline: none;
-              display: block;
-              line-height: 0.48rem;
-              font-size: 0.16rem;
-              color:#89817A;
-            }
-          }
-
-          .right_button{
-            width: 2rem;
-            height: 100%;
-            float: right;
-            background-color: #f77922;
-            border-radius: 0.1rem;
-            font-size: 0.28rem;
-            color:#FFF;
+            outline: none;
+            display: block;
             line-height: 0.48rem;
-            text-align: center;
+            font-size: 0.16rem;
+            color:#89817A;
           }
         }
 
-        input[type='button']{
-          width: 2.65rem;
-          height: 0.6rem;
-          margin:1.4rem auto 0;
-          border-radius: 0.28rem;
+        .right_button{
+          width: 2rem;
+          height: 100%;
+          float: right;
           background-color: #f77922;
-          color: #FFF;
-          font-size: 0.4rem;
+          border-radius: 0.1rem;
+          font-size: 0.28rem;
+          color:#FFF;
+          line-height: 0.48rem;
           text-align: center;
-          display: block;
-          outline: none;
         }
+      }
+
+      input[type='button']{
+        width: 2.65rem;
+        height: 0.6rem;
+        margin:1.4rem auto 0;
+        border-radius: 0.28rem;
+        background-color: #f77922;
+        color: #FFF;
+        font-size: 0.4rem;
+        text-align: center;
+        display: block;
+        outline: none;
       }
     }
   }

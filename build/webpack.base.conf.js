@@ -10,7 +10,7 @@ var useCssSourceMap = cssSourceMapDev || cssSourceMapProd
 
 module.exports = {
   entry: {
-    app: './src/main.js',
+    index: './src/views/index.js',
     multi: './src/main.js',
   },
   output: {

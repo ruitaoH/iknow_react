@@ -4,21 +4,19 @@
   padding: 0.26rem 0.26rem 0.26rem 0;
   border-bottom: 0.02rem solid #ede3d6;
 
-  @at-root{
-    .desc{
-      font-size:0.32rem;
-      color: #ACA9A4;
-      margin-bottom: 0.16rem;
+  .desc{
+    font-size:0.32rem;
+    color: #ACA9A4;
+    margin-bottom: 0.16rem;
 
-      span{
-        color: #818181;
-      }
+    span{
+      color: #818181;
     }
+  }
 
-    .title{
-      font-size: 0.32rem;
-      color: #4C566C;
-      line-height: 0.46rem;
-    }
+  .title{
+    font-size: 0.32rem;
+    color: #4C566C;
+    line-height: 0.46rem;
   }
 }

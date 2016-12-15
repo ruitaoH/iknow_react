@@ -1,4 +1,4 @@
-require('style/reset.css')
+require('style/common/reset.css')
 require('style/answer/editQuestion.scss')
 
 import React from 'react'
@@ -17,6 +17,11 @@ class EditQuestion extends React.Component {
 
     this.showBombBox = this.showBombBox.bind(this)
     this.hideBombBox = this.hideBombBox.bind(this)
+    this.goBack = this.goBack.bind(this)
+  }
+
+  goBack () {
+    this.props.router.goBack()
   }
 
   showBombBox () {
@@ -57,6 +62,7 @@ class EditQuestion extends React.Component {
           afterDot="true"
           showBombBox={this.showBombBox}
           hideBombBox={this.hideBombBox}
+          goBack={this.goBack}
         />
 
         <div className="main_container">
@@ -79,14 +85,14 @@ class EditQuestion extends React.Component {
 
           <div className="button_container">
             <div className="left">
-              <img src={require('../../images/xie.jpg')} />
+              <img src={require('image/xie.jpg')} />
               <span>编辑问题</span>
             </div>
 
             <div className="line"></div>
 
             <div className="right">
-              <img src={require('../../images/close.png')} />
+              <img src={require('image/close.png')} />
               <span>关闭问题</span>
               </div>
           </div>

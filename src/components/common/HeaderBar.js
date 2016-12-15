@@ -24,7 +24,7 @@ class HeaderBar extends React.Component {
 
     return (
       <div className="headerBar">
-        <img src={require('../../images/left_arrow.png')} />
+        <img src={require('image/left_arrow.png')} onClick={this.props.goBack} />
 
         <p>{this.props.content}</p>
 
