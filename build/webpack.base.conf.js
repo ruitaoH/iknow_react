@@ -26,7 +26,8 @@ module.exports = {
       'image': path.resolve(__dirname, '../src/images'),
       'component': path.resolve(__dirname, '../src/components'),
       'style': path.resolve(__dirname, '../src/styles'),
-      'font': path.resolve(__dirname, '../src/fonts')
+      'font': path.resolve(__dirname, '../src/fonts'),
+      'util': path.resolve(__dirname, '../src/utils')
     }
   },
   resolveLoader: {

@@ -17,11 +17,6 @@ class EditQuestion extends React.Component {
 
     this.showBombBox = this.showBombBox.bind(this)
     this.hideBombBox = this.hideBombBox.bind(this)
-    this.goBack = this.goBack.bind(this)
-  }
-
-  goBack () {
-    this.props.router.goBack()
   }
 
   showBombBox () {
@@ -62,7 +57,7 @@ class EditQuestion extends React.Component {
           afterDot="true"
           showBombBox={this.showBombBox}
           hideBombBox={this.hideBombBox}
-          goBack={this.goBack}
+          goBack={this.props.router.goBack}
         />
 
         <div className="main_container">

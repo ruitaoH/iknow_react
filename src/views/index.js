@@ -2,6 +2,8 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, browserHistory } from 'react-router'
 
+import { url } from 'util/Configs'
+
 import App from 'component/App'
 
 import EditMyAnswer from 'component/answer/EditMyAnswer'
@@ -12,7 +14,7 @@ render((
   <Router history={browserHistory}>
     <Route path="/" component={App} />
 
-    <Route path="/aaa/:qid" component={EditQuestion} />
-    <Route path="/bbb/:qid/:aid" component={EditMyAnswer} />
+    <Route path={url.editQuestion} component={EditQuestion} />
+    <Route path={url.editMyAnswer} component={EditMyAnswer} />
   </Router>
 ), document.getElementById('app'))

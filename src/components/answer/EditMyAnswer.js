@@ -12,6 +12,7 @@ class EditMyAnswer extends React.Component {
       <div className="editMyAnswer">
         <HeaderBar
           content="查看回答"
+          goBack={this.props.router.goBack}
         />
 
         <div className="main_container">
