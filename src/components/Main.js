@@ -1,6 +1,8 @@
 import React from 'react'
-require('../scss/main.scss')
-let BingyanLogo = require('../assets/logo.png')
+
+require('style/main.scss')
+
+let BingyanLogo = require('image/logo.png')
 
 class AppComponent extends React.Component {
   render () {
@@ -9,7 +11,7 @@ class AppComponent extends React.Component {
         <img src={BingyanLogo} alt="冰岩作坊出品" />
         <div className="notice">让 react 的使用体验跟 vue 一样舒适</div>
       </div>
-    );
+    )
   }
 }
 

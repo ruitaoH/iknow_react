@@ -1,0 +1,116 @@
+.otherInfoBox{
+  width: 100%;
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+
+  box-sizing: border-box;
+  padding: 1.28rem 0.76rem 2.54rem 0.62rem;
+
+  position: relative;
+
+  ul{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.08rem;
+    margin-left:-0.62rem;
+    box-sizing: border-box;
+    z-index: 11;
+  }
+
+  @at-root{
+    .mask{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      background: #534840;
+      opacity: 0.8;
+    }
+
+    .left{
+      width: 1.78rem;
+      height: 100%;
+      float: left;
+
+      position: relative;
+      z-index: 12;
+
+      img{
+        width: 1.78rem;
+        height: 1.78rem;
+        border-radius: 50%;
+        vertical-align: bottom;
+      }
+
+      h3{
+        font-size: 0.24rem;
+        color: #628DAB;
+        text-align: center;
+        margin:0.18rem 0 0.28rem;
+      }
+
+      div{
+        margin: 0 auto;
+        width: 1.5rem;
+        height: 0.6rem;
+        border-radius: 0.3rem;
+        background-color: #F77922;
+        color: #FFF;
+        font-size: 0.34rem;
+        line-height: 0.6rem;
+        text-align: center;
+      }
+  }
+
+    .right{
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding-left: 2.6rem;
+
+      position: relative;
+      z-index: 11;
+
+      > div{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        border-left: 0.02rem solid #FFF;
+        padding-top: 0.12rem;
+        padding-left: 0.16rem;
+
+        h1{
+          font-size: 0.36rem;
+          color:#FFF;
+          margin-bottom: 0.3rem;
+        }
+
+        h2{
+          font-size: 0.3rem;
+          line-height: 0.36rem;
+          color:#FFF;
+          margin-bottom:0.32rem;
+        }
+
+        h3{
+          font-size: 0.3rem;
+          color:#FFF;
+        }
+
+        div{
+          width: 100%;
+          height: 0.26rem;
+          margin-top: 0.72rem;
+          line-height: 0;
+        }
+      }
+    }
+  }
+}

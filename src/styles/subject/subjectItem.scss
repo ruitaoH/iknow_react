@@ -1,0 +1,26 @@
+.subjectItem{
+  width: 100%;
+  height: 2.22rem;
+  background-color: #f6f1ea;
+  border-bottom: 0.02rem solid #ede3d6;
+
+  > img{
+    width: 2rem;
+    height: 1.5rem;
+    float: left;
+    margin: 0.36rem 0 0.36rem 0.24rem;
+  }
+
+  div{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding:0.38rem 0.5rem 0.36rem 2.42rem;
+
+    p{
+      font-size: 0.32rem;
+      line-height: 0.36rem;
+      color: #676664;
+    }
+  }
+}

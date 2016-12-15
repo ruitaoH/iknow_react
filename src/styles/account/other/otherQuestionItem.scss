@@ -1,0 +1,24 @@
+@import "../../common/mixin";
+
+.otherQuestionItem{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.3rem 0;
+  border-bottom: 0.02rem solid #ede3d6;
+  line-height: 0.36rem;
+
+  @include clear;
+
+  p:first-child{
+    font-size: 0.32rem;
+    color: #4C566C;
+    margin-bottom: 0.04rem;
+  }
+
+  .num{
+    font-size: 0.26rem;
+    line-height: 0.3rem;
+    color: #818181;
+    float: right;
+  }
+}

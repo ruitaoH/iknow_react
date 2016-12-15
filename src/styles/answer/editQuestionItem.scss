@@ -1,0 +1,65 @@
+@import '../common/mixin';
+
+.editQuestionItem{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.46rem 0.26rem 0.46rem 0.22rem;
+  border-bottom: 0.02rem solid #d5d5d5;
+
+  @include clear;
+
+  .left{
+    width: 0.84rem;
+    height: 1.32rem;
+    margin-right: 0.2rem;
+    float: left;
+    text-align: center;
+
+    position: relative;
+    z-index: 11;
+
+    img{
+      width: 0.84rem;
+      height: 0.84rem;
+      border-radius: 50%;
+      margin-bottom: 0.12rem;
+      vertical-align: top;
+    }
+
+    span{
+      vertical-align: top;
+      display: inline-block;
+      height: 0.28rem;
+      line-height: 0.28rem;
+      text-align: center;
+      color: #FFF;
+      background-color: #f77922;
+      border-radius: 0.14rem;
+      font-size:0.14rem;
+      border-left: 0.08rem solid #f77922;
+      border-right: 0.08rem solid #f77922;
+    }
+  }
+
+  .right{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 1.04rem;
+
+    position: relative;
+    z-index: 1;
+
+    h1{
+      color: #999999;
+      font-size: 0.32rem;
+      line-height: 0.32rem;
+      margin-bottom: 0.3rem;
+    }
+
+    p{
+      color: #818181;
+      font-size: 0.32rem;
+      line-height: 0.4rem;
+    }
+  }
+}

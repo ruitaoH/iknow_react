@@ -1,0 +1,92 @@
+.notice{
+  width: 100%;
+  height: 100%;
+
+  .header_container{
+    width: 100%;
+    height: 0.8rem;
+    border-bottom: 0.02rem solid #d5d5d5;
+    background-color: #e3ddd6;
+    position: relative;
+    z-index: 11;
+
+    div{
+      float: left;
+    }
+
+    .left,.right{
+      width: 50%;
+      height: 100%;
+      box-sizing: border-box;
+      font-size: 0.36rem;
+      line-height: 0.8rem;
+      color: #747270;
+      position: relative;
+
+      // 文字的两端居中
+      text-align: justify;
+
+      span{
+        display: inline-block;
+        padding-left: 100%;
+      }
+    }
+
+    .left{
+      padding:0 0.4rem 0 1.9rem;
+    }
+
+    .right{
+      padding: 0 1.9rem 0 0.4rem;
+    }
+
+    .line{
+      height: 0.26rem;
+      margin-top: 0.26rem;
+      border-left: 0.02rem solid #FFF;
+      margin-left: -0.02rem;
+    }
+
+    .under_line{
+      width: 1.24rem;
+      border-top: 0.04rem solid #f77922;
+      position: absolute;
+      bottom: 0;
+      transition: left 0.35s ease-in-out;
+    }
+  }
+
+  .main_container{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 0.82rem;
+    margin-top: -0.82rem;
+    position: relative;
+    z-index: 1;
+    background-color: #f6f1ea;
+  }
+}
+
+// 内容组件
+.content{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.3rem 0.24rem;
+  border-bottom: 0.02rem #ede3d6;
+
+  p{
+    font-size: 0.32rem;
+    line-height: 0.46rem;
+    color:#96969f;
+
+    span{
+      color: #4c566c;
+    }
+  }
+}
+
+// 私信组件
+.private_message{
+
+}

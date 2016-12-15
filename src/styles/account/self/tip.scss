@@ -1,0 +1,27 @@
+.tip{
+  width: 100%;
+  height: 0.9rem;
+  box-sizing: border-box;
+  border-bottom: 0.02rem solid #e5d0b7;
+  padding:0.24rem 0.24rem 0.2rem 0.1rem;
+  line-height: 0;
+
+  .icon{
+    width: 0.44rem;
+    height: 0.44rem;
+  }
+
+  span{
+    font-size: 0.36rem;
+    color: rgb(137,129,122);
+    vertical-align: middle;
+    margin-left: 0.26rem;
+  }
+
+  .arrow{
+    float: right;
+    width: 0.16rem;
+    height: 0.28rem;
+    margin-top: 0.08rem;
+  }
+}

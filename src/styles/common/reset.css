@@ -1,0 +1,76 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video ,input{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a{
+  text-decoration:none;
+}
+
+textarea{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  resize: none;
+  outline: none;
+}
+
+html,body{
+    font-family:'Source Han SansCN Regular';
+
+    width:100%;
+    height:100%;
+}
+
+#app{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: "iconfont";
+    src: url('../../fonts/font1/iconfont.eot?t=1480313600174'); /* IE9*/
+    src: url('../../fonts/font1/iconfont.eot?t=1480313600174#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../fonts/font1/iconfont.woff?t=1480313600174') format('woff'), /* chrome, firefox */
+    url('../../fonts/font1/iconfont.ttf?t=1480313600174') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../../fonts/font1/iconfont.svg?t=1480313600174#iconfont') format('svg'); /* iOS 4.1- */
+}

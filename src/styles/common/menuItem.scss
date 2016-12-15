@@ -1,0 +1,25 @@
+.menuItem{
+  box-sizing: border-box;
+  width:0.5rem;
+  height:0.94rem;
+  padding:0.14rem 0;
+  line-height:0;
+
+  img{
+    width:0.4rem;
+    height:0.4rem;
+    vertical-align: top;
+    margin:0 0.05rem;
+  }
+
+  figcaption{
+    font-size:0.2rem;
+    text-align: center;
+    line-height:0.2rem;
+    height:0.2rem;
+    width:0.5rem;
+    margin-top:0.06rem;
+
+    color:#FFF;
+  }
+}

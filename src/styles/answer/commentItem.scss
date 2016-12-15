@@ -1,0 +1,88 @@
+@import '../common/mixin';
+
+.reply{
+  width: 100%;
+  margin-top: 0.2rem;
+  // line-height: 0.46rem;
+
+  h3,p{
+    font-size: 0.32rem;
+    color: #999999;
+    display: block;
+    height: 0.3rem;
+    line-height: 0.3rem;
+
+    span{
+      color: #ea8b49;
+    }
+  }
+
+  p{
+    margin-top: 0.18rem;
+  }
+}
+
+.commentItem{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.32rem 0.22rem 0.32rem 0.26rem;
+  border-bottom: 0.02rem solid #d5d5d5;
+  line-height: 0;
+
+  @include clear;
+
+  img{
+    width: 0.68rem;
+    height: 0.68rem;
+    border-radius: 50%;
+    vertical-align: top;
+    float: left;
+    margin-right: 0.34rem;
+  }
+
+  .comment{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 1.02rem;
+    line-height: normal;
+    position: relative;
+
+    >{
+      h1{
+        font-size: 0.34rem;
+        color:#ea8b49;
+        margin-bottom: 0.16rem;
+        display: block;
+        height: 0.3rem;
+        line-height: 0.3rem;
+      }
+
+      h2{
+        position: absolute;
+        right: 0;
+        top: 0.04rem;
+        height: 0.28rem;
+        line-height: 0.28rem;
+        font-size: 0.3rem;
+        color: #ea8b49;
+      }
+
+      h3{
+        font-size: 0.22rem;
+        color: #BFBAB5;
+        margin-bottom:0.26rem;
+        display: block;
+        height: 0.18rem;
+        line-height: 0.18rem;
+      }
+
+      p{
+        font-size: 0.32rem;
+        color: #999999;
+        display: block;
+        height: 0.3rem;
+        line-height: 0.3rem;
+      }
+    }
+  }
+}

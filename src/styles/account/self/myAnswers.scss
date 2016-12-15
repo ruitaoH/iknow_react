@@ -1,0 +1,16 @@
+.myAnswers{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 0.82rem;
+  background-color: #f6f1ea;
+
+  @at-root{
+    .answers_container{
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding-left: 0.26rem;
+    }
+  }
+}

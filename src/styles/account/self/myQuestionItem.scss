@@ -1,0 +1,18 @@
+.myQuestionItem{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.26rem 0.26rem 0.26rem 0;
+  border-bottom: 0.02rem solid #ede3d6;
+
+  p:first-child{
+    font-size: 0.32rem;
+    color: #4C566C;
+    line-height: 0.45rem;
+    margin-bottom: 0.24rem;
+  }
+
+  .num{
+    font-size: 0.26rem;
+    color: #E5D0B7;
+  }
+}

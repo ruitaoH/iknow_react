@@ -1,0 +1,124 @@
+@import "../common/mixin";
+
+.exhibition{
+  height: 5.1rem;
+  width: 100%;
+  background-color: #f6f1ea;
+
+  position: relative;
+
+  @at-root{
+    .lunbo{
+      width: 100%;
+      height: 100%;
+    }
+
+    .wrapper{
+      width: 300%;
+      height: 100%;
+    }
+
+    .circle_container{
+      position: absolute;
+      width: 0.86rem;
+      height: 0.14rem;
+      bottom: 0.48rem;
+      left: 50%;
+      margin-left: -0.43rem;
+      line-height: 0;
+
+      span{
+        display: inline-block;;
+        width: 0.14rem;
+        height: 0.14rem;
+        background-color: #a1a1a1;
+        border-radius: 50%;
+        vertical-align: bottom;
+      }
+
+      span:nth-child(2){
+        margin:0 0.22rem;
+      }
+
+      .selected{
+        background-color: #FFF;
+      }
+    }
+  }
+}
+
+// 展览主题
+.exhibitionItem{
+  width: 33.33%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .mask{
+    width: 100%;
+    height: 100%;
+    background-color: #534840;
+    opacity: 0.7;
+  }
+
+  .container{
+    position: absolute;
+    width: 100%;
+    top: 2.96rem;
+
+    p{
+      color: #FFF;
+      width: 100%;
+      height:0.88rem;
+      font-size: 0.4rem;
+      line-height: 0.52rem;
+      box-sizing: border-box;
+      margin-left: 0.38rem;
+      padding:0 0.86rem 0 0.26rem;
+      border-left:0.04rem solid #FFF;
+    }
+
+    .like_read{
+      height: 0.26rem;
+      width: 1.54rem;
+      position: absolute;
+      right: 0.28rem;
+      line-height: 0;
+
+      span{
+        font-size: 0.22rem;
+        color: #FFF;
+        line-height: 0.26rem;
+        vertical-align: middle;
+      }
+
+      span:nth-child(1){
+        &:before{
+          font-family: 'iconfont';
+          content: '\e68b';
+          display: inline-block;
+          font-size: 0.2rem;
+          margin-right: 0.06rem;
+          vertical-align: middle;
+        }
+      }
+
+      span:nth-child(2){
+        margin-left: 0.12rem;
+
+        &:before{
+          font-family: 'iconfont';
+          content: '\e604';
+          display: inline-block;
+          font-size: 0.3rem;
+          margin-right: 0.06rem;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

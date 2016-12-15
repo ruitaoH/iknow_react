@@ -1,0 +1,25 @@
+@import "../common/mixin";
+
+.index{
+  height: 100%;
+  width: 100%;
+  background-color: #f6f1ea;
+
+  header{
+    background-color: #e3ddd6;
+    width:100%;
+    height:0.96rem;
+    border-bottom:0.02rem solid #cfcfcf;
+    box-sizing:border-box;
+    padding:0.2rem 0.14rem;
+    position: fixed;
+    top: 0;
+  }
+
+  .list_container{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 0.96rem;
+  }
+}

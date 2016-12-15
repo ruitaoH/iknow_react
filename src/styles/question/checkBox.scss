@@ -1,0 +1,20 @@
+.checkBox{
+  display: inline-block;
+  vertical-align: top;
+  width: 0.24rem;
+  height: 0.24rem;
+  box-sizing: border-box;
+  border: 0.02rem solid #89847e;
+  border-radius: 50%;
+
+  margin-top: 0.04rem;
+  margin-right:0.16rem;
+
+  div{
+    width: 0.16rem;
+    height: 0.16rem;
+    border-radius: 50%;
+    margin-left:0.02rem;
+    margin-top:0.02rem;
+  }
+}

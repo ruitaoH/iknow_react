@@ -1,0 +1,122 @@
+.editQuestion{
+  width: 100%;
+  height: 100%;
+  background-color: #f6f1ea;
+  box-sizing: border-box;
+  padding-top:0.82rem;
+
+  .main_container{
+    width: 100%;
+
+    .question_container{
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.24rem 0.36rem;
+      border-bottom: 0.02rem solid #d5d5d5;
+
+      .question{
+        font-size: 0.34rem;
+        line-height: 0.46rem;
+        color: #4C566C;
+
+        span{
+          display: inline-block;
+          color: #FFF;
+          font-size: 0.26rem;
+          line-height: 0.34rem;
+          text-align: center;
+          border-left: 0.1rem solid #f77922;
+          border-right: 0.1rem solid #f77922;
+          border-radius: 0.2rem;
+          background-color: #f77922;
+          margin:0.06rem 0 0 0.28rem;
+        }
+      }
+
+      .labels{
+        width: 100%;
+        height: 0.28rem;
+        margin: 0.28rem 0 0.44rem;
+
+        li{
+          font-size: 0.28rem;
+          line-height: 0.28rem;
+          color:#818181;
+          float: left;
+          margin-right: 0.2rem;
+        }
+
+        li:first-child{
+          margin-right: 0.1rem;
+          font-weight: bold;
+        }
+      }
+
+      .content{
+        width: 100%;
+        font-size: 0.32rem;
+        line-height: 0.46rem;
+        color: #818181;
+        margin-bottom: 0.46rem;
+      }
+
+      .num{
+        width: 100%;
+        height: 0.28rem;
+
+        span{
+          float: left;
+          margin-right: 0.26rem;
+          font-size: 0.28rem;
+          line-height: 0.28rem;
+          color: #818181;
+        }
+      }
+    }
+
+    .button_container{
+      width: 100%;
+      height: 1.02rem;
+      box-sizing: border-box;
+      border-bottom: 0.02rem solid #d5d5d5;
+
+      div{
+        float: left;
+      }
+
+      .line{
+        height: 0.92rem;
+        border-left: 0.02rem solid #d5d5d5;
+        margin-left: -0.02rem;
+        margin-top: 0.04rem;
+      }
+
+      .left,.right{
+        width: 50%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0.28rem 0 0.3rem 0.75rem;
+
+        img{
+          width: 0.4rem;
+          height: 0.42rem;
+          vertical-align: top;
+          margin-right: 0.2rem;
+        }
+
+        span{
+          font-size: 0.32rem;
+          line-height: 0.42rem;
+          color: #929190;
+          vertical-align: top;
+        }
+      }
+    }
+
+    .answer_container{
+      width: 100%;
+      background-color: #f6f1ea;
+      overflow: hidden;
+    }
+  }
+}

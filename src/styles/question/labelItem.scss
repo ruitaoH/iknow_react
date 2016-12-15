@@ -1,0 +1,26 @@
+@import "../common/mixin";
+
+.labelItem{
+  width: 100%;
+  height: 1.06rem;
+  box-sizing: border-box;
+  border-bottom: 0.02rem solid #babad6;
+  padding-left: 0.26rem;
+  position: relative;
+
+  p{
+    font-size: 0.34rem;
+    color: #89847E;
+    line-height: 1.04rem;
+  }
+
+  i{
+    font-family:"iconfont";
+    position: absolute;
+    top: 0;
+    right: 0.32rem;
+    line-height: 1.04rem;
+    color: #f67c28;
+    font-size: 0.44rem;
+  }
+}

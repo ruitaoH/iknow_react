@@ -19,12 +19,14 @@ module.exports = {
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['', '.js', '.jsx','scss'],
     fallback: [path.join(__dirname, '../node_modules')],
     alias: {
       'src': path.resolve(__dirname, '../src'),
-      'assets': path.resolve(__dirname, '../src/assets'),
-      'components': path.resolve(__dirname, '../src/components')
+      'image': path.resolve(__dirname, '../src/images'),
+      'component': path.resolve(__dirname, '../src/components'),
+      'style': path.resolve(__dirname, '../src/styles'),
+      'font': path.resolve(__dirname, '../src/fonts')
     }
   },
   resolveLoader: {

@@ -1,0 +1,28 @@
+.otherAQCCItem{
+  float: left;
+  width: 1.8rem;
+  height: 100%;
+  background-color: #5b524b;
+  box-sizing: border-box;
+  padding: 0.1rem 0 0.12rem;
+  color: #FFF;
+
+  h1{
+    font-size: 0.45rem;
+    margin-bottom: 0.12rem;
+    text-align: center;
+  }
+
+  h2{
+    font-size: 0.28rem;
+    text-align: center;
+  }
+}
+
+.marginRight{
+  margin-right: 0.1rem;
+}
+
+.selected{
+  color: #F77922;
+}
