@@ -29,7 +29,7 @@ class Menu extends React.Component {
     return (
       <div className="menu">
         <MenuItem
-          index="1"
+          index={1}
           selected={this.state.isSelected}
           select={this.select(1)}
           cssObject={{marginRight: '0.95rem'}}
@@ -41,7 +41,7 @@ class Menu extends React.Component {
         />
 
         <MenuItem
-          index="2"
+          index={2}
           selected={this.state.isSelected}
           select={this.select(2)}
           cssObject={{marginRight: '0.65rem'}}
@@ -53,7 +53,7 @@ class Menu extends React.Component {
         />
 
         <MenuItem
-          index="3"
+          index={3}
           selected={this.state.isSelected}
           select={this.select(3)}
           data={{
@@ -63,7 +63,7 @@ class Menu extends React.Component {
         />
 
         <MenuItem
-          index="4"
+          index={4}
           selected={this.state.isSelected}
           select={this.select(4)}
           cssObject={{marginLeft: '0.65rem'}}
@@ -75,7 +75,7 @@ class Menu extends React.Component {
         />
 
         <MenuItem
-          index="5"
+          index={5}
           selected={this.state.isSelected}
           select={this.select(5)}
           cssObject={{marginLeft: '0.95rem'}}

@@ -10,7 +10,7 @@ class MenuItem extends React.Component {
       selected: false
     }
 
-      // 事件绑定
+    // 事件绑定
     this.clickHandler = this.clickHandler.bind(this)
   }
 
