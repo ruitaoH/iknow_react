@@ -1,4 +1,4 @@
-import style from 'style/myAnswerItem.scss'
+import style from 'style/account/self/myAnswerItem.scss'
 
 import React from 'react'
 

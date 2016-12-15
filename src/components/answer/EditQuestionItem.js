@@ -4,16 +4,18 @@ import React from 'react'
 
 class EditQuestionItem extends React.Component {
   render () {
+    let data = this.props.data
+
     return (
       <div className={ style.editQuestionItem }>
         <div className={ style.left }>
-          <img src={require('image/portraits.jpg')} />
+          <img src={data.head} />
           <span>LV12</span>
         </div>
 
         <div className={ style.right }>
-          <h1>昵称</h1>
-          <p>我们私聊，就要毕业了，目前不需要，你看你要的话就拿走。</p>
+          <h1>{data.name}</h1>
+          <p>{data.answer}</p>
         </div>
       </div>
     )

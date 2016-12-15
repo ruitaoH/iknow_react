@@ -11,6 +11,9 @@ const url = {
   register: '/register'
 }
 
+const label = ['学习考试', '校园服务', '求助资源', '情感生活', '学校政策', '其他']
+
 module.exports = {
-  url: url
+  url: url,
+  label: label
 }

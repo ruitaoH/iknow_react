@@ -2,6 +2,7 @@ require('style/common/reset.css')
 import style from 'style/answer/editQuestion.scss'
 
 import React from 'react'
+import { label } from 'util/Configs'
 
 import HeaderBar from 'component/common/HeaderBar'
 import EditQuestionItem from './EditQuestionItem'
@@ -12,7 +13,11 @@ class EditQuestion extends React.Component {
     super(props)
 
     this.state = {
-      'bombBox': false
+      bombBox: false,
+      data: {
+        target: [],
+        answer: []
+      }
     }
 
     this.showBombBox = this.showBombBox.bind(this)
@@ -31,8 +36,30 @@ class EditQuestion extends React.Component {
     })
   }
 
+  fetchData () {
+    fetch(`/question/question_info/${this.props.params.qid}`, {
+      method: 'GET'
+    }).then((response) => {
+      return response.json()
+    }).then((jsonData) => {
+
+    })
+  }
+
+  componentDidMount () {
+    fetch(`/question/question_info/${this.props.params.qid}`, {
+      method: 'GET'
+    }).then((response) => {
+      return response.json()
+    }).then((jsonData) => {
+      this.setState({
+        data: jsonData
+      })
+    })
+  }
+
   render () {
-    let bombBox
+    let bombBox, labels
     // type={
     //     'question':{
     //         title:'查看提问',
@@ -43,10 +70,23 @@ class EditQuestion extends React.Component {
     //         btnLeft:'我要回答'
     //     }
     // }// TODO 这里没有明白
+    let data = this.state.data
+    let answers = []
 
     if (this.state.bombBox) {
       bombBox = <BombBox hideBombBox={this.hideBombBox} />
     }
+
+    labels = data.target.map((val, index) => {
+      return <li key={index}>{label[val]}</li>
+    })
+
+    answers = data.answer.map((obj, index) => {
+      return <EditQuestionItem
+              key={index}
+              data={obj}
+            />
+    })
 
     return (
       <div className={ style.editQuestion }>
@@ -62,19 +102,22 @@ class EditQuestion extends React.Component {
 
         <div className={ style.main_container }>
           <div className={ style.question_container }>
-            <p className={ style.question }>哪位好心的师弟师妹帮忙注册一个白云黄鹤的帐号用用？<span>5分</span></p>
+            <p className={ style.question }>{data.question}<span>{data.score}分</span></p>
 
-            <ul className={ style.labels }>
-              <li>#</li>
-              <li>学习考试</li>
-              <li>校园生活</li>
-            </ul>
+            {
+              data.target.length
+                ? <ul className={ style.labels }>
+                    <li>#</li>
+                    {labels}
+                  </ul>
+                : null
+            }
 
-            <p className={ style.content }>我们私聊，就要毕业了，目前不需要，你看你要的话就拿走.</p>
+            <p className={ style.content }>{data.supplement}</p>
 
             <div className={ style.num }>
-              <span>10人关注</span>
-              <span>2人回答</span>
+              <span>{data.num_follow}人关注</span>
+              <span>{data.answer.length}人回答</span>
             </div>
           </div>
 
@@ -93,7 +136,8 @@ class EditQuestion extends React.Component {
           </div>
 
           <div className={ style.answer_container }>
-            <EditQuestionItem
+            {answers}
+            {/* <EditQuestionItem
             />
             <EditQuestionItem
             />
@@ -106,7 +150,7 @@ class EditQuestion extends React.Component {
             <EditQuestionItem
             />
             <EditQuestionItem
-            />
+            /> */}
           </div>
         </div>
       </div>

@@ -21,12 +21,17 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/question':{
+      '/question': {
         target:'http://ik.hustonline.net',
         secure: false,
         changeOrigin: true
       },
-      '/theme':{
+      '/theme': {
+        target:'http://ik.hustonline.net',
+        secure: false,
+        changeOrigin: true
+      },
+      '/resource': {
         target:'http://ik.hustonline.net',
         secure: false,
         changeOrigin: true

@@ -1,4 +1,4 @@
-require('style/reset.css')
+require('style/common/reset.css')
 import style from 'style/account/self/myQuestions.scss'
 
 import React from 'react'

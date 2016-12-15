@@ -7,6 +7,10 @@ import Exhibition from './Exhibition'
 import SubjectItem from './SubjectItem'
 
 class Subject extends React.Component {
+  // constructor (props){
+  //   super(props)
+  // }
+
   render () {
     return (
       <div className={ style.subject }>
