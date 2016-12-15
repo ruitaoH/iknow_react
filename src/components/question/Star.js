@@ -1,4 +1,4 @@
-require('style/question/star.scss')
+import style from 'style/question/star.scss'
 
 import React from 'react'
 
@@ -25,7 +25,7 @@ class Star extends React.Component {
     }
 
     return (
-      <div className='star' style={objStyle} onClick={this.clickHandler}>
+      <div className={ style.star } style={objStyle} onClick={this.clickHandler}>
           {num}
       </div>
     )

@@ -1,4 +1,4 @@
-require('style/common/menu.scss')
+import style from 'style/common/menu.scss'
 
 import React from 'react'
 import MenuItem from './MenuItem'
@@ -27,7 +27,7 @@ class Menu extends React.Component {
 
   render () {
     return (
-      <div className="menu">
+      <div className={ style.menu }>
         <MenuItem
           index={1}
           selected={this.state.isSelected}

@@ -1,5 +1,5 @@
 require('style/common/reset.css')
-require('style/account/self/myself.scss')
+import style from 'style/account/self/myself.scss'
 
 import React from 'react'
 
@@ -9,12 +9,12 @@ import Tip from './Tip'
 class MySelf extends React.Component {
   render () {
     return (
-      <div className="myself">
-        <div className="info_container">
+      <div className={ style.myself }>
+        <div className={ style.info_container }>
           <InfoBox />
         </div>
 
-        <div className="tips_container">
+        <div className={ style.tips_container }>
           <Tip
             content="我的提问"
             icon={require('image/self_question.png')}

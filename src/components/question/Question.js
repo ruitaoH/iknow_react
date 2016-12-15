@@ -1,5 +1,5 @@
 require('style/common/reset.css')
-require('style/question/question.scss')
+import style from 'style/question/question.scss'
 
 import React from 'react'
 
@@ -67,34 +67,34 @@ class Qeustion extends React.Component {
     }
 
     return (
-      <div className="question">
+      <div className={ style.question }>
         <HeaderBar
           content="我要提问"
           afterContent="发布"
         />
 
-        <div className="question_container">
-          <div className="title_container">
+        <div className={ style.question_container }>
+          <div className={ style.title_container }>
             <input placeholder="输入你的问题* (20字以内)" required />
           </div>
 
-          <div className="content_container">
+          <div className={ style.content_container }>
             <textarea placeholder="补充内容* (100字以内)" required></textarea>
 
-            <a className="label_container">
+            <a className={ style.label_container }>
               添加标签* (请选择1-2项)
               <img src={require('image/right_arrow.png')} />
             </a>
           </div>
 
-          <div className="score_container">
+          <div className={ style.score_container }>
             <span>悬赏积分*:</span>
-            <div className="star_container">
+            <div className={ style.star_container }>
               {stars}
             </div>
           </div>
 
-          <div className="noname_container" onClick={this.selectNoName}>
+          <div className={ style.noname_container } onClick={this.selectNoName}>
             <CheckBox
               selected={this.state.noname}
             />

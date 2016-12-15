@@ -1,4 +1,4 @@
-require('style/subject/exhibition.scss')
+import style from 'style/subject/exhibition.scss'
 
 import React from 'react'
 import ReactIScroll from 'react-iscroll'
@@ -8,13 +8,13 @@ import ControllerUnit from './ControllerUnit'
 
 const ExhibitionItem = (props) => {
   return (
-    <div className="exhibitionItem" style={{backgroundImage: 'url(' + props.pic + ')'}}>
-      <div className="mask"></div>
+    <div className={ style.exhibitionItem } style={{backgroundImage: 'url(' + props.pic + ')'}}>
+      <div className={ style.mask }></div>
 
-      <div className="container">
+      <div className={ style.container }>
         <p>{props.title}</p>
 
-        <div className="like_read">
+        <div className={ style.like_read }>
           <span>123</span>
           <span>123</span>
         </div>
@@ -112,7 +112,7 @@ class Exhibition extends React.Component {
     })
 
     return (
-      <div className="exhibition">
+      <div className={ style.exhibition }>
         <ReactIScroll
           iScroll={iScroll}
           options={{
@@ -125,12 +125,12 @@ class Exhibition extends React.Component {
           }}
           onScrollEnd={this.onScrollEnd}
         >
-          <div className="wrapper">
+          <div className={ style.wrapper }>
             {exhibitionItems}
           </div>
         </ReactIScroll>
 
-        <div className="circle_container">
+        <div className={ style.circle_container }>
           {controllerUnits}
         </div>
       </div>

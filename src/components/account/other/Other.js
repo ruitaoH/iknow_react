@@ -1,5 +1,5 @@
 require('style/common/reset.css')
-require('style/account/other/other.scss')
+import style from 'style/account/other/other.scss'
 
 import React from 'react'
 
@@ -12,12 +12,12 @@ import OtherCollectionItem from './OtherCollectionItem'
 class Other extends React.Component {
   render () {
     return (
-      <div className="other">
-        <div className="info_container">
+      <div className={ style.other }>
+        <div className={ style.info_container }>
             <OtherInfoBox />
         </div>
 
-        <div className="contents_container">
+        <div className={ style.contents_container }>
           <OtherAnswerItem
             name="昵称"
             content="哪个好心人帮忙...飞过来快色各色高栗色讲故事色狼关键是粉丝各色个色各色各色如果"

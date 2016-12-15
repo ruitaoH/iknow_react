@@ -1,5 +1,5 @@
 require('style/reset.css')
-require('style/account/self/myQuestions.scss')
+import style from 'style/account/self/myQuestions.scss'
 
 import React from 'react'
 
@@ -33,12 +33,12 @@ class MyQuestions extends React.Component {
     )
 
     return (
-      <div className="myQuestions">
+      <div className={ style.myQuestions }>
         <HeaderBar
           content="我的提问"
         />
 
-        <div className="questions_container">
+        <div className={ style.questions_container }>
           {questions}
         </div>
       </div>

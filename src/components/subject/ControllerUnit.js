@@ -2,14 +2,16 @@ import React from 'react'
 
 class ControllerUnit extends React.Component {
   render () {
-    let className = ''
+    let styleObj
 
     if (this.props.selected) {
-      className += ' selected'
+      styleObj = {
+        backgroundColor: '#FFF'
+      }
     }
 
     return (
-      <span className={className}></span>
+      <span style={styleObj}></span>
     )
   }
 }

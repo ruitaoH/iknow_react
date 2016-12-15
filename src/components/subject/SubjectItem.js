@@ -1,4 +1,4 @@
-require('style/subject/subjectItem.scss')
+import style from 'style/subject/subjectItem.scss'
 
 import React from 'react'
 
@@ -7,7 +7,7 @@ import Count from 'component/common/Count'
 class SubjectItem extends React.Component {
   render () {
     return (
-      <div className="subjectItem">
+      <div className={ style.subjectItem }>
         <img src={require('image/head.png')} />
 
         <div>

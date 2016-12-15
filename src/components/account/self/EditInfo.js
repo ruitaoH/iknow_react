@@ -1,5 +1,5 @@
 require('style/common/reset.css')
-require('style/account/self/editInfo.scss')
+import style from 'style/account/self/editInfo.scss'
 
 import React from 'react'
 
@@ -9,22 +9,22 @@ import InfoEditer from './InfoEditer'
 class EditInfo extends React.Component {
   render () {
     return (
-      <div className="editInfo">
+      <div className={ style.editInfo }>
         <HeaderBar
           content="编辑个人资料"
           afterButton="完成"
         />
 
-        <div className="edit_avatar">
-          <img className="avatar" src={require('../../../images/portraits.jpg')} />
+        <div className={ style.edit_avatar }>
+          <img className={ style.avatar } src={require('image/portraits.jpg')} />
 
           <span>编辑头像</span>
 
-          <img className="arrow" src={require('../../../images/account_arrow3.png')} />
+          <img className={ style.arrow } src={require('image/account_arrow3.png')} />
         </div>
 
-        <div className="edit_info">
-          <div className="edit_info_container">
+        <div className={ style.edit_info }>
+          <div className={ style.edit_info_container }>
             <InfoEditer
               content="昵称"
             />

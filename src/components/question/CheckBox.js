@@ -1,4 +1,4 @@
-require('style/question/checkBox.scss')
+import style from 'style/question/checkBox.scss'
 
 import React from 'react'
 
@@ -11,7 +11,7 @@ class CheckBox extends React.Component {
     }
 
     return (
-      <div className="checkBox">
+      <div className={ style.checkBox }>
         <div style={objStyle}></div>
       </div>
     )

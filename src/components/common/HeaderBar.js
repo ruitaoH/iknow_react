@@ -1,4 +1,4 @@
-require('style/common/headerBar.scss')
+import style from 'style/common/headerBar.scss'
 
 import React from 'react'
 
@@ -23,7 +23,7 @@ class HeaderBar extends React.Component {
     }
 
     return (
-      <div className="headerBar">
+      <div className={ style.headerBar }>
         <img src={require('image/left_arrow.png')} onClick={this.props.goBack} />
 
         <p>{this.props.content}</p>

@@ -1,5 +1,5 @@
 require('style/common/reset.css')
-require('style/subject/subject.scss')
+import style from 'style/subject/subject.scss'
 
 import React from 'react'
 
@@ -9,10 +9,10 @@ import SubjectItem from './SubjectItem'
 class Subject extends React.Component {
   render () {
     return (
-      <div className="subject">
+      <div className={ style.subject }>
         <Exhibition />
 
-        <div className="more">
+        <div className={ style.more }>
           <span>热门专题</span>
 
           <div>

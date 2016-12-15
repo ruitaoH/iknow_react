@@ -1,4 +1,4 @@
-require('style/common/count.scss')
+import style from 'style/common/count.scss'
 
 import React from 'react'
 
@@ -10,7 +10,7 @@ class Count extends React.Component {
     }
 
     return (
-      <span className="count" style={this.props.objStyle}>
+      <span className={ style.count } style={this.props.objStyle}>
         <img src={imagesURL[this.props.type]} />
         {this.props.count}
       </span>

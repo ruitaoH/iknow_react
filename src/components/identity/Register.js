@@ -1,5 +1,5 @@
 require('style/common/reset.css')
-require('style/identity/register.scss')
+import style from 'style/identity/register.scss'
 
 import React from 'react'
 
@@ -10,14 +10,15 @@ import MyInput from '../common/MyInput'
 class Register extends React.Component {
   render () {
     return (
-      <div className="register">
+      <div className={ style.register }>
         <HeaderBar
           content="我要注册"
+          goBack={this.props.router.goBack}
         />
 
-        <div className="register_main">
-          <div className="main_content">
-            <div className="avatar">
+        <div className={ style.register_main }>
+          <div className={ style.main_content }>
+            <div className={ style.avatar }>
               <img />
             </div>
 
@@ -27,12 +28,12 @@ class Register extends React.Component {
               placeholder="手机号/邮箱"
             />
 
-            <div className="checkcode">
-              <div className="left_input">
+            <div className={ style.checkcode }>
+              <div className={ style.left_input }>
                 <input type="text" />
               </div>
 
-              <div className="right_button">获取验证码</div>
+              <div className={ style.right_button }>获取验证码</div>
             </div>
 
             <MyInput

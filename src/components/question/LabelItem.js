@@ -1,4 +1,4 @@
-require('style/question/labelItem.scss')
+import style from 'style/question/labelItem.scss'
 
 import React from 'react'
 
@@ -21,7 +21,7 @@ class LabelItem extends React.Component {
     }
 
     return (
-      <div className="labelItem" onClick={this.clickHandler}>
+      <div className={ style.labelItem } onClick={this.clickHandler}>
         <p>{this.props.content}</p>
         {check}
       </div>

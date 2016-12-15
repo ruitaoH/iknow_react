@@ -1,4 +1,4 @@
-require('style/common/menuItem.scss')
+import style from 'style/common/menuItem.scss'
 
 import React from 'react'
 
@@ -34,7 +34,7 @@ class MenuItem extends React.Component {
 
     if (this.props.data.center) {
       return (
-        <figure onClick={this.clickHandler} className="center">
+        <figure onClick={this.clickHandler} className={ style.center }>
           <a href="#">
             <img src={this.props.data.icon} alt="" />
           </a>
@@ -42,7 +42,7 @@ class MenuItem extends React.Component {
       )
     } else {
       return (
-        <figure onClick={this.clickHandler} className="menuItem" style={this.props.cssObject}>
+        <figure onClick={this.clickHandler} className={ style.menuItem } style={this.props.cssObject}>
           <a href="#">
             <img src={imgUrl} alt="" />
             <figcaption style={styleObj}>{this.props.data.title}</figcaption>

@@ -27,13 +27,13 @@ exports.cssLoaders = function (options) {
   }
 
   return {
-    css: generateLoaders(['css']),
-    postcss: generateLoaders(['css']),
-    less: generateLoaders(['css', 'less']),
-    sass: generateLoaders(['css', 'sass?indentedSyntax']),
-    scss: generateLoaders(['css', 'sass']),
-    stylus: generateLoaders(['css', 'stylus']),
-    styl: generateLoaders(['css', 'stylus'])
+    css: generateLoaders(['css?modules']),
+    postcss: generateLoaders(['css?modules']),
+    less: generateLoaders(['css?modules', 'less']),
+    sass: generateLoaders(['css?modules', 'sass?indentedSyntax']),
+    scss: generateLoaders(['css?modules', 'sass']),
+    stylus: generateLoaders(['css?modules', 'stylus']),
+    styl: generateLoaders(['css?modules', 'stylus'])
   }
 }
 

@@ -1,5 +1,5 @@
 require('style/common/reset.css')
-require('style/index/index.scss')
+import style from 'style/index/index.scss'
 
 import React from 'react'
 import ReactIScroll from 'react-iscroll'
@@ -72,12 +72,12 @@ class Index extends React.Component {
     })
 
     return (
-      <div className="index">
+      <div className={ style.index }>
         <header>
           <Search />
         </header>
 
-        <div className="list_container">
+        <div className={ style.list_container }>
           <ReactIScroll
             iScroll={iScroll}
             options={this.props.options}

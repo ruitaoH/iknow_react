@@ -1,5 +1,5 @@
 require('style/common/reset.css')
-require('style/account/self/myCollections.scss')
+import style from 'style/account/self/myCollections.scss'
 
 import React from 'react'
 
@@ -30,12 +30,12 @@ class MyCollections extends React.Component {
     )
 
     return (
-      <div className="myCollections">
+      <div className={ style.myCollections }>
         <HeaderBar
           content="我的收藏"
         />
 
-        <div className="collections_container">
+      <div className={ style.collections_container }>
           {collections}
         </div>
       </div>

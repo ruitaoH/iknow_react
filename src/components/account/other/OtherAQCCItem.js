@@ -1,6 +1,7 @@
-require('style/account/other/otherAQCCItem.scss')
+import style from 'style/account/other/otherAQCCItem.scss'
 
 import React from 'react'
+import Util from 'util/Util'
 
 class OtherAQCCItem extends React.Component {
   render () {
@@ -15,7 +16,7 @@ class OtherAQCCItem extends React.Component {
     }
 
     return (
-      <li className={className} style={this.props.objStyle}>
+      <li className={ Util.getStyle(style, className) } style={this.props.objStyle}>
         <h1>{this.props.num}</h1>
         <h2>{this.props.content}</h2>
       </li>

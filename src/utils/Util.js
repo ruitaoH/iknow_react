@@ -14,6 +14,17 @@ class Util {
       })
     })
   }
+
+  // 得到style对象
+  static getStyle (style, className) {
+    let classArray = className.split(' ')
+
+    classArray.unshift('') // 向数组头添加元素,方便reduce
+
+    return classArray.reduce((result, val) => {
+      return result + ' ' + style[val]
+    })
+  }
 }
 
 export default Util

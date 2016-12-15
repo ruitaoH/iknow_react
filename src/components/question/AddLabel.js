@@ -1,5 +1,5 @@
 require('style/common/reset.css')
-require('style/question/addLabel.scss')
+import style from 'style/question/addLabel.scss'
 
 import React from 'react'
 
@@ -69,13 +69,13 @@ class AddLabel extends React.Component {
     }
 
     return (
-      <div className="addLabel">
+      <div className={ style.addLabel }>
         <HeaderBar
           content="添加标签"
           afterContent="完成"
         />
 
-        <div className="label_container">
+        <div className={ style.label_container }>
           {labels}
         </div>
       </div>

@@ -1,5 +1,5 @@
 require('style/common/reset.css')
-require('style/account/self/myAnswers.scss')
+import style from 'style/account/self/myAnswers.scss'
 
 import React from 'react'
 
@@ -27,12 +27,12 @@ class MyAnswers extends React.Component {
     )
 
     return (
-      <div className="myAnswers">
+      <div className={ style.myAnswers }>
         <HeaderBar
           content="我的回答"
         />
 
-        <div className="answers_container">
+      <div className={ style.answers_container }>
           {answers}
         </div>
       </div>

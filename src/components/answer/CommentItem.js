@@ -1,10 +1,10 @@
-require('style/answer/commentItem.scss')
+import style from 'style/answer/commentItem.scss'
 
 import React from 'react'
 
 const Reply = (props) => {
   return (
-    <div className="reply">
+    <div className={ style.reply }>
       <h3><span>{props.other}</span>回复<span>{props.user}:</span></h3>
       <p>{props.content}</p>
     </div>
@@ -14,10 +14,10 @@ const Reply = (props) => {
 class CommentItem extends React.Component {
   render () {
     return (
-      <div className="commentItem">
+      <div className={ style.commentItem }>
         <img src={require('image/portraits.jpg')} />
 
-        <div className='comment'>
+        <div className={ style.comment }>
           <h1>昵称</h1>
           <h2>回复</h2>
           <h3>2016-03-27</h3>

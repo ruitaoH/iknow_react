@@ -1,4 +1,4 @@
-require('style/account/self/infoEditer.scss')
+import style from 'style/account/self/infoEditer.scss'
 
 import React from 'react'
 
@@ -7,13 +7,13 @@ class InfoEditer extends React.Component {
     let inputElement
 
     if (this.props.type === 'textarea') {
-      inputElement = <div className="textarea_container"><textarea placeholder="请输入介绍" /></div>
+      inputElement = <div className={ style.textarea_container }><textarea placeholder="请输入介绍" /></div>
     } else {
-      inputElement = <div className="input_container"><input /></div>
+      inputElement = <div className={ style.input_container }><input /></div>
     }
 
     return (
-      <div style={this.props.style} className="infoEditer">
+      <div style={this.props.style} className={ style.infoEditer }>
         <span>{this.props.content}</span>
 
         {inputElement}

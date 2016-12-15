@@ -1,4 +1,4 @@
-require('style/account/other/otherCollectionItem.scss')
+import style from 'style/account/other/otherCollectionItem.scss'
 
 import React from 'react'
 
@@ -10,7 +10,7 @@ class OtherCollectionItem extends React.Component {
     }
 
     return (
-      <div className="otherCollectionItem">
+      <div className={ style.otherCollectionItem }>
         <h3>{this.props.name}收藏了{type[this.props.type]}</h3>
         <p>&nbsp;&nbsp;{this.props.content}</p>
       </div>

@@ -1,6 +1,7 @@
-require('style/common/myInput.scss')
+import style from 'style/common/myInput.scss'
 
 import React from 'react'
+import Util from 'util/Util'
 
 class MyInput extends React.Component {
   render () {
@@ -11,7 +12,7 @@ class MyInput extends React.Component {
     }
 
     return (
-      <div className={className}>
+      <div className={ Util.getStyle(style, className) }>
         <input type={this.props.type} placeholder={this.props.placeholder} required />
       </div>
     )

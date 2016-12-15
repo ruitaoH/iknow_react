@@ -1,11 +1,11 @@
 require('style/common/reset.css')
-require('style/notice/notice.scss')
+import style from 'style/notice/notice.scss'
 
 import React from 'react'
 
 const Content = (props) => {
   return (
-    <div className="content">
+    <div className={ style.content }>
       <p>你在问题&nbsp;&nbsp;<span>{props.title}</span>&nbsp;&nbsp;下的回答经用户举报已经被管理员iKnow删除,删除理由:&nbsp;&nbsp;<span>{props.reason}</span>&nbsp;&nbsp;点此查看iKnow行为规范.</p>
     </div>
   )
@@ -13,7 +13,7 @@ const Content = (props) => {
 
 const PrivateMessage = (props) => {
   return (
-    <div className="private_message">
+    <div className={ style.private_message }>
 
     </div>
   )
@@ -46,19 +46,19 @@ class Notice extends React.Component {
     }
 
     return (
-      <div className="notice">
-        <div className="header_container">
-          <div className="left" style={leftStyle} onClick={this.select.bind(this, 1)}>
+      <div className={ style.notice }>
+        <div className={ style.header_container }>
+          <div className={ style.left } style={leftStyle} onClick={this.select.bind(this, 1)}>
             内容<span></span>
           </div>
-          <div className="line"></div>
-          <div className="right" style={rightStyle} onClick={this.select.bind(this, 2)}>
+          <div className={ style.line }></div>
+          <div className={ style.right } style={rightStyle} onClick={this.select.bind(this, 2)}>
             私信<span></span>
           </div>
-          <div className="under_line" style={lineStyle}></div>
+          <div className={ style.under_line } style={lineStyle}></div>
         </div>
 
-        <div className="main_container">
+        <div className={ style.main_container }>
           <Content
             title="failgjeilagje各色极乐谷角色i类两个i就色理工将诶了"
             reason="广告"

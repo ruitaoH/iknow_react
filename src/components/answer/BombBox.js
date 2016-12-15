@@ -1,4 +1,4 @@
-require('style/answer/bombBox.scss')
+import style from 'style/answer/bombBox.scss'
 
 import React from 'react'
 import CopyToClipboard from 'react-copy-to-clipboard'
@@ -20,19 +20,19 @@ class BombBox extends React.Component {
 
   render () {
     return (
-      <div className="bombBox">
+      <div className={ style.bombBox }>
         <div>
           <div>
-            <div className="report">我要举报</div>
-            <div className="line"></div>
+            <div className={ style.report }>我要举报</div>
+            <div className={ style.line }></div>
 
             <CopyToClipboard
               text={window.location.href}
             >
-              <div className="copy" onClick={this.props.hideBombBox}>复制链接</div>
+              <div className={ style.copy } onClick={this.props.hideBombBox}>复制链接</div>
             </CopyToClipboard>
           </div>
-          <div className="cancel" onClick={this.cancelClick}>取消</div>
+          <div className={ style.cancel } onClick={this.cancelClick}>取消</div>
         </div>
       </div>
     )

@@ -1,5 +1,5 @@
 require('style/common/reset.css')
-require('style/answer/editQuestion.scss')
+import style from 'style/answer/editQuestion.scss'
 
 import React from 'react'
 
@@ -49,7 +49,7 @@ class EditQuestion extends React.Component {
     }
 
     return (
-      <div className="editQuestion">
+      <div className={ style.editQuestion }>
         {bombBox}
 
         <HeaderBar
@@ -60,39 +60,39 @@ class EditQuestion extends React.Component {
           goBack={this.props.router.goBack}
         />
 
-        <div className="main_container">
-          <div className="question_container">
-            <p className="question">哪位好心的师弟师妹帮忙注册一个白云黄鹤的帐号用用？<span>5分</span></p>
+        <div className={ style.main_container }>
+          <div className={ style.question_container }>
+            <p className={ style.question }>哪位好心的师弟师妹帮忙注册一个白云黄鹤的帐号用用？<span>5分</span></p>
 
-            <ul className="labels">
+            <ul className={ style.labels }>
               <li>#</li>
               <li>学习考试</li>
               <li>校园生活</li>
             </ul>
 
-            <p className="content">我们私聊，就要毕业了，目前不需要，你看你要的话就拿走.</p>
+            <p className={ style.content }>我们私聊，就要毕业了，目前不需要，你看你要的话就拿走.</p>
 
-            <div className="num">
+            <div className={ style.num }>
               <span>10人关注</span>
               <span>2人回答</span>
             </div>
           </div>
 
-          <div className="button_container">
-            <div className="left">
+          <div className={ style.button_container }>
+            <div className={ style.left }>
               <img src={require('image/xie.jpg')} />
               <span>编辑问题</span>
             </div>
 
-            <div className="line"></div>
+            <div className={ style.line }></div>
 
-            <div className="right">
+            <div className={ style.right }>
               <img src={require('image/close.png')} />
               <span>关闭问题</span>
               </div>
           </div>
 
-          <div className="answer_container">
+          <div className={ style.answer_container }>
             <EditQuestionItem
             />
             <EditQuestionItem

@@ -1,4 +1,4 @@
-require('style/account/other/otherInfoBox.scss')
+import style from 'style/account/other/otherInfoBox.scss'
 
 import React from 'react'
 
@@ -8,16 +8,16 @@ import Count from 'component/common/Count'
 class OtherInfoBox extends React.Component {
   render () {
     return (
-      <div className="otherInfoBox" style={{backgroundImage: 'url(' + require('image/portraits.jpg') + ')'}}>
-        <div className="mask"></div>
+      <div className={ style.otherInfoBox } style={{backgroundImage: 'url(' + require('image/portraits.jpg') + ')'}}>
+        <div className={ style.mask }></div>
 
-        <div className="left">
-          <img src={require('../../../images/portraits.jpg')} />
+        <div className={ style.left }>
+          <img src={require('image/portraits.jpg')} />
           <h3>初级弟子一级</h3>
           <div>关注</div>
         </div>
 
-        <div className="right">
+        <div className={ style.right }>
           <div>
             <h1>这是一个昵称</h1>
             <h2>嘿嘿嘿,这是一句签名哈哈哈哈</h2>

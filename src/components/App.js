@@ -1,5 +1,5 @@
 require('style/common/reset.css')
-require('style/app.scss')
+import style from 'style/app.scss'
 
 import React from 'react'
 
@@ -40,7 +40,7 @@ class App extends React.Component {
     let page = this.state.pages[this.state.selected - 1]
 
     return (
-      <div className="app">
+      <div className={ style.app }>
         {page}
 
         <footer>
